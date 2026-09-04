@@ -1,0 +1,64 @@
+<!DOCTYPE <html>
+<html lang ="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Título do site</title>
+     <style>
+        body {font-family: Arial, sans-serif;}
+        .center{text-align:center;}
+    </style>
+</head>
+
+<body>
+ <header>
+    <h1 align="center">Título principal (H1) - centralizado </h1>
+    <h2 align="left">Subtítulo (H2) - alinhado à esquerda</h2>
+    <h3 align="right">Seção (H3) - alinhado à direita</h3>
+    <h4>Subseção (H4)</h4>
+    <h5>Detalhe (H5)</h5>
+    <h6>Nota (H6)</h6>
+ </header>
+
+<nav> 
+    <p>
+        <a href="#Posts">Posts</a> |
+        <a href="#Lateral">Lateral</a> |
+        <a href="#Rodapé" >Rodapé</a>
+    </p>
+</nav>
+
+<section id="Posts">
+    <header> 
+        <h2> Meu Blog - Primeiro Post </h2>
+    </header>
+    <article class="post">
+        <p>
+            Este é um parágrafo com 
+            <strong>negrito,</strong>
+            <em>itálico,</em>
+            <span style = "text-decoration: underline;">sublinhado,</span>
+            <span style = "text-decoration: line-through;">riscado,</span>
+            além de exemplos de
+            <sub>subscrito</sub>
+            e
+            <sup>sobrescrito</sup>.
+        </p>
+        <p >
+            Exemplo de 
+            <span style="color: blue; font-size: 18px;">texto estilizado</span>
+             (substituindo a tag 'font' obsoleta).    
+        </p> 
+        <div class="center">Este texto está centralizado (substituindo 'center').</div>
+        <p text-align: justify>Parágrafo justificado para demonstrar o alinhamento.
+            <br>
+            Esta é a linha seguinte após o 'br'. 
+        </p>
+        <aside id="Lateral"><h3>Conteúdo Relacionado</h3></aside>
+        <p>Links, anúncios, ou notas que não fazem parte do fluxo principal do artigo.</p>
+    </article>
+</section>
+<footer id="Rodape">
+    <div class="center" style="font-size: 12px;">© 2026 - Exemplo didático de HTML da Aula 03</div>
+</footer>
+</body>
+</html>
