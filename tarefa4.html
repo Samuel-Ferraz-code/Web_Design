@@ -1,0 +1,163 @@
+<!--ABRIR COM BOTAO DIREITO NO NOME DO ARQUIVO E SELECIONAR "OPEN WITH LIVE SERVER"-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <title>Tarefa 4</title>   
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;}
+        .layout-principal {
+            width: 100%;
+            border-collapse: collapse;}
+        .layout-principal > tbody > tr > td {
+            border: 1px solid #555555;
+            padding: 15px;
+            vertical-align: top;
+            width: 25%; }
+        h4 {
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;}
+        table {
+            border-collapse: collapse;}
+        table.dados-tabela th, table.dados-tabela td {
+            border: 1px solid #555555;
+            padding: 6px 12px;
+            text-align: left;}
+        .destaque {
+            background-color: #fffae6;
+            padding: 5px;}
+        div.destaque {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px dashed #ccc;}
+        input[type="text"], input[type="email"], textarea {
+            width: 95%;
+            margin-bottom: 8px;}
+    </style>
+</head>
+
+<body>
+    <header> 
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="border: 1px solid #555555; background-color: #eaeaea; text-align: center; padding: 10px; font-weight: bold;">
+                    Aula 04 - Mídias em HTML
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <main style="margin-top: 5px;">
+        <table class="layout-principal">
+            <tbody>
+                <tr>
+                    <td>
+                        <h4>Imagens</h4>
+                        <p><img src="img.1.png" alt="Imagem 1"></p>
+                        <!-- Imagens 2 e 3 com dimensões fixas de 100x100 pixels -->
+                        <p><img src="img.2.png" alt="Imagem 2" width="100" height="100"></p>
+                        <p><img src="img.3.png" alt="Imagem 3" width="100" height="100"></p>
+                    </td>
+                    <td>
+                        <h4>Vídeo</h4>
+                        <p><video src="Squirrel.mp4" poster="Video desenho de esquilo.jpg" controls width="100%"></video></p>
+                    </td>
+                    <td>
+                        <h4>Áudio</h4>
+                        <audio controls>
+                            <source src="audiomp3.mpeg" type="audio/mpeg">
+                            <source src="leão2.ogg" type="audio/ogg">
+                        </audio>
+                    </td>
+                    <td>
+                        <h4>Formulário</h4>
+                        <form action="processar.php" method="post">
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" id="nome" name="nome" required><br>
+
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" id="email" name="e-mail" required><br>
+
+                            <label for="mensagem">Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="4"></textarea><br>
+
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Links</h4>
+                        <p><a href="https://google.com">Google</a></p>
+                        <p><a href="https://google.com"><img src="img.jpg" alt="Google"></a></p>
+                        <p><a href="https://google.com" target="_blank">targetblank</a></p>
+                    </td>
+                    <td>
+                        <h4>Listas</h4>
+                        <ol>
+                            <li>Primeiro item</li>
+                            <li>Segundo item</li>
+                            <li>Terceiro item</li>
+                        </ol>
+                        <ul>
+                            <li>Item A</li>
+                            <li>Item B</li>
+                            <li>Item C</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4>Tabelas</h4>
+
+                        <table class="dados-tabela">
+                            <thead>
+                                <tr>
+
+                                    <th>Coluna 1</th>
+                                    <th>Coluna 2</th>
+                                    <th>Coluna 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Linha 1</td>
+                                    <td>Dado 1</td>
+                                    <td>Dado 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Linha 2</td>
+                                    <td>Dado 3</td>
+                                    <td>Dado 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <h4>Identificadores e Classes</h4>
+                        <p id="introducao">Parágrafo com <strong>id</strong>.</p>
+                        <p class="destaque">Parágrafo com classe "destaque".</p>
+
+                        <div class="destaque">
+                            <h3>Div Contêiner</h3>
+                            <p>Parágrafo dentro do contêiner.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 5px;">
+            <tr>
+                <td style="border: 1px solid #555555; background-color: #eaeaea; text-align: center; padding: 10px; font-size: 14px;">
+                    &copy; Exemplo didático de HTML
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
